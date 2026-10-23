@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="fa" dir="rtl" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="js/theme-init.js"></script>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>فرحناز اصغرپور | طراح وب و فرانت‌اند مبتدی، جویای کارآموزی</title>
+  <meta name="description" content="پورتفولیوی فرحناز اصغرپور؛ علاقه‌مند به طراحی وب و فرانت‌اند با HTML، CSS و JavaScript، جویای فرصت کارآموزی در تهران.">
+  <meta name="author" content="فرحناز اصغرپور">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#f5f2ff">
+  <link rel="canonical" href="https://farahnaz-portfolio.vercel.app">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Farahnaz Asgharpour">
+  <meta property="og:locale" content="fa_IR">
+  <meta property="og:title" content="فرحناز اصغرپور | طراح وب و فرانت‌اند مبتدی">
+  <meta property="og:description" content="علاقه‌مند به فرانت‌اند و طراحی وب، جویای فرصت کارآموزی.">
+  <meta property="og:url" content="https://farahnaz-portfolio.vercel.app">
+  <meta property="og:image" content="https://farahnaz-portfolio.vercel.app/assets/images/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="فرحناز اصغرپور | فرانت‌اند مبتدی">
+  <meta name="twitter:description" content="علاقه‌مند به فرانت‌اند و طراحی وب، جویای فرصت کارآموزی.">
+  <meta name="twitter:image" content="https://example.com/assets/images/og-image.jpg">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/Estedad.woff" as="font" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://farahnaz-portfolio.vercel.app/#person",
+          "name": "فرحناز اصغرپور",
+          "alternateName": "Farahnaz Asgharpour",
+          "jobTitle": "Junior web designer and front-end developer (seeking internship)",
+          "url": "https://farahnaz-portfolio.vercel.app/",
+          "email": "mailto:farahnazasgharpour11@gmail.com",
+          "address": { "@type": "PostalAddress", "addressLocality": "تهران", "addressCountry": "IR" },
+          "alumniOf": { "@type": "CollegeOrUniversity", "name": "دانشگاه آزاد اسلامی کرج" },
+          "knowsAbout": ["HTML5", "CSS3", "JavaScript", "UI/UX Design"],
+          "knowsLanguage": ["fa", "en"],
+          "sameAs": [
+            "https://github.com/farahnazasgharpour1-glitch"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://farahnaz-portfolio.vercel.app/#website",
+          "url": "https://farahnaz-portfolio.vercel.app/",
+          "name": "Farahnaz Asgharpour — Portfolio",
+          "inLanguage": ["fa", "en"],
+          "publisher": { "@id": "https://farahnaz-portfolio.vercel.app/#person" }
+        }
+      ]
+    }
+    </script>
+  
+  
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.3.26/dist/lenis.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content" data-i18n="skipLink">رفتن به محتوای اصلی</a>
+  <div class="ambient ambient--left" aria-hidden="true"></div>
+  <div class="ambient ambient--right" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="header-actions">
+        <button class="glass-btn language-button" id="language-toggle" type="button" lang="en" aria-label="Switch language to English">EN</button>
+        <button class="glass-btn icon-button" id="theme-toggle" type="button" aria-label="تغییر تم" data-i18n-aria="themeAria"><span id="theme-icon" aria-hidden="true">☾</span></button>
+        <button class="glass-btn icon-button menu-toggle" id="menu-toggle" type="button" aria-label="باز کردن منو" data-i18n-aria="menuOpenAria" aria-controls="main-nav" aria-expanded="false"><span class="menu-lines" aria-hidden="true"><i></i><i></i><i></i></span></button>
+      </div>
+      <a class="brand" href="#home" aria-label="Farahnaz Asgharpour">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="brand-name" data-i18n="brand">فرحناز اصغرپور</span>
+      </a>
+      <nav class="main-nav" id="main-nav" aria-label="منوی اصلی" data-i18n-aria="navLabel">
+        <a href="#home" data-i18n="navHome">خانه</a>
+        <a href="#projects" data-i18n="navProjects">پروژه‌ها</a>
+        <a href="#about" data-i18n="navAbout">مهارت‌ها</a>
+        <a href="#experience" data-i18n="navExperience">سوابق</a>
+        <a href="#contact" data-i18n="navContact">تماس</a>
+      </nav>
+     
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero container" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span><span data-i18n="eyebrow">فرانت‌اند مبتدی · جویای کارآموزی</span></p>
+        <h1 id="hero-title"><span class="hero-hello" data-i18n="heroHello">سلام، من فرحناز هستم،</span> <span data-i18n="heroTitle">در حال یادگیری فرانت‌اند و ساخت صفحه‌های وب هستم.</span></h1>
+        <p class="hero-description" data-i18n="heroDescription">با HTML، CSS و JavaScript پروژه‌های کوچک می‌سازم و دنبال یک فرصت کارآموزی هستم تا در کنار یک تیم حرفه‌ای رشد کنم.</p>
+        <div class="hero-actions">
+          <a class="glass-btn button button--primary" href="#projects"><span data-i18n="viewProjects">مشاهده نمونه‌کار</span><span aria-hidden="true">↗</span></a>
+          <a class="glass-btn button button--secondary" href="#contact"><span data-i18n="contactMe">تماس با من</span><span aria-hidden="true">✉</span></a>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-hidden="true">
+        <div class="logo-container" dir="ltr">
+          <div class="logo-background"></div>
+          <div class="logo-visual">
+            <div class="orbit-ring r1"></div>
+            <div class="orbit-ring r2"><div class="orbit-dot"></div></div>
+            <div class="logo-mark">
+              <div class="monogram"><span class="letter-f">F</span><span class="letter-a">A</span></div>
+              <div class="cursor-icon"></div>
+            </div>
+          </div>
+          <div class="logo-text"><p class="logo-name">Farahnaz Asgharpour</p><p class="logo-role">Junior Web Designer</p></div>
+          <div class="skill-glass"><span class="code-symbol">&lt;/&gt;</span><span><strong>HTML · CSS · JS</strong><small data-i18n="skillTagline">همیشه در حال یادگیری</small></span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects-section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <div>
+            <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span><span data-i18n="projectsEyebrow">نمونه‌کارها</span></p>
+            <h2 id="projects-title" data-i18n="projectsTitle">نمونه‌کار</h2>
+            <p class="section-intro" data-i18n="projectsDescription">نمونه‌هایی از کارهایی که با دقت و علاقه ساخته‌ام.</p>
+          </div>
+        </div>
+        <div class="project-grid">
+          <article class="project-card" data-reveal>
+            <div class="project-visual project-visual--radmehr" aria-hidden="true">
+              <div class="mock-window"><span></span><span></span><span></span><div class="mock-bars"><i></i><i></i><i></i><i></i><i></i></div><div class="mock-panel"></div></div>
+              <span class="project-chip">HTML · CSS · JS</span>
+            </div>
+            <div class="project-body">
+              <p class="project-kicker">01 / WEBSITE</p>
+              <h3 data-i18n="projectTitle">رادمهر گروپ</h3>
+              <p data-i18n="projectDescription">وب‌سایت حوزه ساختمان و املاک با هویت بصری لوکس و طراحی واکنش‌گرا.</p>
+              <div class="project-footer"><span data-i18n="projectType">طراحی وب‌سایت</span></div>
+            </div>
+          </article>
+          <article class="project-card" data-reveal>
+            <div class="project-visual project-visual--dashboard" aria-hidden="true">
+              <div class="mock-window"><span></span><span></span><span></span><div class="mock-bars"><i></i><i></i><i></i><i></i><i></i></div><div class="mock-panel"></div></div>
+              <span class="project-chip">HTML · CSS · UI</span>
+            </div>
+            <div class="project-body">
+              <p class="project-kicker">02 / PORTFOLIO</p>
+              <h3 data-i18n="project2Title">پورتفولیوی شخصی</h3>
+              <p data-i18n="project2Description">طراحی این وب‌سایت شخصی با تمرکز بر معرفی مهارت‌ها، مسیر یادگیری و نمونه‌کارها.</p>
+              <div class="project-footer"><span data-i18n="project2Type">طراحی رابط کاربری</span></div>
+            </div>
+          </article>
+          <article class="project-card" data-reveal>
+            <div class="project-visual project-visual--mobile" aria-hidden="true">
+              <div class="mock-phone"><span class="phone-notch"></span><b>UI</b><i></i><i></i><i></i></div>
+              <span class="project-chip">HTML · CSS · JS</span>
+            </div>
+            <div class="project-body">
+              <p class="project-kicker">03 / MINI APP</p>
+              <h3 data-i18n="project3Title">فیلتر محصولات</h3>
+              <p data-i18n="project3Description">تمرین تعاملی فرانت‌اند برای نمایش محصولات، جست‌وجو، دسته‌بندی و مرتب‌سازی.</p>
+              <div class="project-footer"><span data-i18n="project3Type">تمرین JavaScript</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section container" id="about" aria-labelledby="about-title">
+      <div class="about-grid">
+        <div data-reveal>
+          <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span><span data-i18n="aboutEyebrow">درباره من</span></p>
+          <h2 id="about-title" data-i18n="aboutTitle">در مسیر یادگیری، با تمرکز بر کیفیت.</h2>
+          <p class="section-intro" data-i18n="aboutDescription">لیسانس برق الکترونیک دارم و چند دورهٔ HTML/CSS و JavaScript گذرانده‌ام. اکنون دنبال کارآموزی‌ام تا مهارت‌هایم را در پروژه‌های واقعی تقویت کنم.</p>
+        </div>
+      </div>
+      <h3 class="block-title" data-reveal data-i18n="skillsTitle">مهارت‌ها</h3>
+      <ul class="skill-list" data-reveal>
+        <li>HTML5</li><li>CSS3</li><li>JavaScript (ES6)</li>
+        <li data-i18n="skillResp">طراحی واکنش‌گرا</li><li data-i18n="skillUx">مبانی UI/UX</li><li data-i18n="langEnglish">زبان انگلیسی</li>
+      </ul>
+    </section>
+
+    <section class="experience-section container" id="experience" aria-labelledby="exp-title">
+      <div class="exp-grid">
+        <div data-reveal>
+          <h2 id="exp-title" class="block-title block-title--lg" data-i18n="expTitle">سابقه کاری</h2>
+          <ol class="timeline">
+            <li class="timeline-item"><h3 data-i18n="job2Title">طراح وب | استارتاپ تک وب</h3><p class="date" data-i18n="job2Date">۱۳۹۸ – ۱۳۹۹</p><p data-i18n="job2Desc">طراحی رابط کاربری و ساخت صفحه‌های فرود با HTML/CSS و جاوااسکریپت.</p></li>
+          </ol>
+        </div>
+        <div data-reveal>
+          <h2 class="block-title block-title--lg" data-i18n="eduTitle">تحصیلات و دوره‌ها</h2>
+          <ol class="timeline">
+            <li class="timeline-item"><h3 data-i18n="edu1Title">لیسانس برق الکترونیک | دانشگاه آزاد کرج</h3><p class="date" data-i18n="edu1Date">۱۳۸۷ – ۱۳۹۱</p></li>
+            <li class="timeline-item"><h3 data-i18n="edu3Title">دوره تخصصی JavaScript | وب‌آکادمی</h3><p class="date" data-i18n="eduYear">۱۴۰۳</p></li>
+            <li class="timeline-item"><h3 data-i18n="edu4Title">دوره پیشرفته HTML/CSS | ارقام انفورماتیک</h3><p class="date" data-i18n="eduYear">۱۴۰۳</p></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section container" id="contact" aria-labelledby="contact-title" data-reveal>
+      <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span><span data-i18n="contactEyebrow">ارتباط</span></p>
+      <h2 id="contact-title" data-i18n="contactTitle">به‌دنبال فرصت کارآموزی هستم.</h2>
+      <p class="section-intro" data-i18n="contactDescription">اگر تیمی برای کارآموزی فرانت‌اند دارید، خوشحال می‌شوم با من در ارتباط باشید.</p>
+      <div class="contact-actions">
+        <a class="glass-btn button button--primary" href="mailto:farahnazasgharpour11@gmail.com"><span data-i18n="emailCta">ارسال ایمیل</span><span aria-hidden="true">✉</span></a>
+      </div>
+      <ul class="contact-list">
+        <li><span aria-hidden="true">✉</span> <a href="mailto:farahnazasgharpour11@gmail.com" dir="ltr">farahnazasgharpour11@gmail.com</a></li>
+        <li><span aria-hidden="true">⌖</span> <span data-i18n="location">تهران، ایران</span></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-art" aria-hidden="true"><span></span><span></span><span></span></div>
+    <div class="container footer-bottom">
+      <span>© <span id="current-year">2026</span> <span data-i18n="brand">فرحناز اصغرپور</span> — <span data-i18n="copyright">تمام حقوق محفوظ است.</span></span>
+      <a href="#home" data-i18n="backTop">بازگشت به بالا ↑</a>
+    </div>
+  </footer>
+</body>
+</html>

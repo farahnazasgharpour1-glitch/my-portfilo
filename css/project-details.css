@@ -1,0 +1,213 @@
+/* ==========================================================
+   صفحه‌های مطالعهٔ موردی (رادمهر گروپ) — هم‌خوان با سیستم طراحی style.css
+   ترتیب فایل: هیرو ← بخش‌های محتوایی ← گالری ← واکنش‌گرایی
+   ========================================================== */
+
+/* ---------- قاب صفحه ---------- */
+.project-detail{padding:22px 0 84px}
+.project-detail .container{padding-inline:0}
+.breadcrumbs{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:8px 0 34px;color:var(--muted);font-size:.88rem}
+.breadcrumbs a:hover{color:var(--accent)}
+
+/* ---------- هیرو ---------- */
+.project-hero{display:grid;grid-template-columns:1.02fr .98fr;gap:42px;align-items:center;padding:30px 0 64px}
+.project-hero h1{margin:10px 0 18px;font-size:clamp(2.3rem,5vw,4.4rem);line-height:1.2;letter-spacing:-.035em}
+.project-hero-copy{max-width:640px}
+.eyebrow{margin:0 0 12px;color:var(--accent);font-size:.82rem;font-weight:700;letter-spacing:.06em}
+.project-lead{max-width:650px;color:var(--muted);font-size:1.08rem;line-height:2}
+.project-meta{display:flex;flex-wrap:wrap;gap:9px;margin:24px 0}
+.project-meta span,.tech-list li{padding:6px 13px;border:1px solid var(--border);border-radius:999px;color:var(--muted);font-size:.84rem}
+.project-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:25px}
+.project-hero-image{margin:0;overflow:hidden;border:1px solid var(--border);border-radius:24px;background:var(--band);box-shadow:var(--shadow)}
+.project-hero-image img{width:100%;height:auto}
+.project-hero-image figcaption{padding:10px 14px;color:var(--muted);font-size:.82rem}
+
+/* ---------- بخش‌های محتوایی ---------- */
+.detail-section{padding:54px 0;border-top:1px solid var(--border)}
+.detail-section--architecture,.detail-section--implementation,.detail-section--stack,.project-outro{content-visibility:auto;contain-intrinsic-size:auto 520px}
+.detail-section h2,.project-outro h2{margin:0 0 18px;font-size:clamp(1.65rem,3vw,2.4rem);line-height:1.45}
+.detail-section-heading{max-width:820px;margin-bottom:28px}
+.detail-section-heading h2{margin:0 0 12px}
+.detail-section-intro{max-width:760px;color:var(--muted);line-height:2}
+
+.detail-overview-grid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(260px,.65fr);gap:clamp(24px,4vw,56px);align-items:start}
+.detail-lead-copy{max-width:760px;color:var(--text);font-size:clamp(1.02rem,1.35vw,1.18rem);line-height:2.15}
+.detail-brief-card{padding:24px;border:1px solid var(--border);border-radius:20px;background:var(--surface);box-shadow:var(--shadow)}
+.detail-brief-label,.detail-principles-label{display:block;margin-bottom:12px;color:var(--accent);font:700 .72rem/1.5 Manrope,Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase}
+html[lang="fa"] .detail-brief-label,html[lang="fa"] .detail-principles-label,html[lang="fa"] .detail-role>span{font-family:Estedad,Tahoma,sans-serif;letter-spacing:0}
+.detail-brief-card>strong{display:block;font-size:1.12rem;line-height:1.7}
+.detail-brief-card p{margin-top:8px;color:var(--muted);font-size:.92rem;line-height:1.9}
+.detail-brief-tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:18px}
+.detail-brief-tags span{padding:4px 10px;border:1px solid var(--border);border-radius:999px;color:var(--muted);font:600 .68rem Manrope,Arial,sans-serif;direction:ltr}
+
+/* کارت‌های هم‌خانواده: highlights و grid یک الگوی مشترک دارند */
+.detail-highlights,.detail-grid{display:grid;gap:14px;margin-top:28px}
+.detail-highlights{grid-template-columns:repeat(3,minmax(0,1fr))}
+.detail-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.detail-grid--three{grid-template-columns:repeat(3,minmax(0,1fr))}
+.detail-grid--four{grid-template-columns:repeat(4,minmax(0,1fr))}
+.detail-highlights article,.detail-grid article{min-width:0;padding:20px 21px;border:1px solid var(--border);border-radius:18px;background:var(--surface)}
+.detail-highlights article>span,.detail-card-index{display:block;margin-bottom:14px;color:var(--accent);font:700 .72rem Manrope,Arial,sans-serif;letter-spacing:.08em}
+.detail-card-index{font-size:.65rem}
+.detail-highlights h3,.detail-grid h3{margin:0 0 8px;font-size:1.05rem;line-height:1.65}
+.detail-highlights p,.detail-grid p{margin:0;color:var(--muted);font-size:.91rem;line-height:1.95}
+
+.detail-columns{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(270px,.8fr);gap:clamp(24px,4vw,64px);align-items:start}
+.detail-columns>div>p{margin:0 0 16px;color:var(--muted);line-height:2.1}
+.detail-principles{padding:23px 24px;border:1px solid var(--border);border-radius:20px;background:var(--band)}
+.detail-principles ul{display:grid;gap:14px}
+.detail-principles li{display:grid;gap:3px;padding-bottom:13px;border-bottom:1px solid var(--border)}
+.detail-principles li:last-child{padding-bottom:0;border-bottom:0}
+.detail-principles li b{font-size:.92rem}
+.detail-principles li span{color:var(--muted);font-size:.83rem;line-height:1.7}
+
+.detail-note{margin-top:22px;padding:17px 20px;border-inline-start:3px solid var(--accent);border-radius:12px;background:var(--band);color:var(--muted);font-size:.91rem;line-height:1.95}
+.tech-list{display:flex;flex-wrap:wrap;gap:10px;margin:24px 0}
+.detail-role{display:grid;grid-template-columns:150px 1fr;gap:24px;padding:22px 24px;border:1px solid var(--border);border-radius:18px;background:var(--surface)}
+.detail-role>span{color:var(--accent);font:700 .72rem Manrope,Arial,sans-serif;letter-spacing:.1em}
+.detail-role p{color:var(--muted);line-height:2}
+.project-outro{margin-top:26px;padding:38px;border-radius:22px;background:var(--band)}
+.project-outro h2{margin-bottom:12px}
+.project-outro>p:not(.eyebrow){max-width:820px;color:var(--muted);line-height:2.05}
+
+/* ==========================================================
+   گالری رادمهر
+   چیدمان: ستون اصلی (قاب تصویر + نوار کنترل) در چپ، فهرست تصاویر در راست.
+   قاب تصویر نسبت ثابت دارد و تصویر آن را کامل پر می‌کند (cover)؛
+   دکمهٔ «نمای کامل» همان تصویر را بدون هیچ برشی در یک پنجره باز می‌کند.
+   ========================================================== */
+.gallery-section{padding-block:clamp(32px,4vw,56px)}
+.gallery-heading{max-width:780px;margin-bottom:26px}
+.gallery-heading h2{margin:0 0 10px;font-size:clamp(1.65rem,3vw,2.35rem);line-height:1.3;letter-spacing:-.03em}
+.gallery-intro{color:var(--muted);font-size:clamp(.9rem,1vw,.97rem);line-height:1.9}
+
+.radmehr-gallery{
+  --g-radius:22px;--g-ease:cubic-bezier(.2,.8,.2,1);
+  --g-dur:7200ms;                    /* مقدار واقعی از data-autoplay توسط gallery.js تنظیم می‌شود */
+  --g-violet:#a98cff;
+  width:100%;min-width:0;direction:ltr  /* قاب تصویر همیشه چپ است، فارسی یا انگلیسی */
+}
+.gallery-layout{display:grid;grid-template-columns:minmax(0,1.72fr) minmax(256px,.78fr);gap:clamp(12px,1.6vw,18px);align-items:stretch}
+.gallery-main{display:grid;grid-template-rows:auto auto;gap:10px;min-width:0}
+
+/* قاب تصویر */
+.gallery-stage{position:relative;isolation:isolate;aspect-ratio:16/10;max-height:min(70vh,600px);overflow:hidden;border:1px solid rgba(255,255,255,.1);border-radius:var(--g-radius);background:#14131f;box-shadow:0 18px 48px rgba(20,16,43,.18);touch-action:pan-y}
+.gallery-slide{position:absolute;inset:0;margin:0;animation:gallery-in .55s var(--g-ease) both}
+.gallery-slide[hidden]{display:none}
+.gallery-slide-main{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 0}
+.gallery-slide[data-focus="center"] .gallery-slide-main{object-position:50% 50%}
+/* تصویرهایی که cover زیادی از آن‌ها می‌بُرد: تصویر کامل می‌ماند و نسخهٔ محوشدهٔ خودش قاب را پر می‌کند */
+.gallery-slide-bg{display:none}
+.gallery-slide[data-fit="contain"] .gallery-slide-bg{position:absolute;inset:-8%;display:block;width:116%;height:116%;object-fit:cover;filter:blur(28px) saturate(1.2) brightness(.5)}
+.gallery-slide[data-fit="contain"] .gallery-slide-main{position:relative;object-fit:contain;object-position:50% 50%;filter:drop-shadow(0 14px 30px rgba(0,0,0,.5))}
+@keyframes gallery-in{from{opacity:.25;transform:scale(1.015)}to{opacity:1;transform:none}}
+
+.gallery-caption{display:flex;flex:1 1 0;align-items:center;justify-content:center;min-width:0;margin:0;color:var(--text);font-size:.82rem;font-weight:700;line-height:1.5}
+.gallery-caption span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+html[lang="fa"] .gallery-caption{direction:rtl}
+.gallery-zoom{position:absolute;top:12px;inset-inline-end:12px;z-index:2;display:inline-flex;align-items:center;gap:7px;min-height:40px;padding:0 14px;border:1px solid rgba(255,255,255,.26);border-radius:999px;background:rgba(18,16,32,.6);color:#fff;font-size:.78rem;cursor:pointer;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);transition:background .2s,border-color .2s,transform .2s}
+.gallery-zoom:hover{border-color:var(--g-violet);background:rgba(120,90,220,.55);transform:translateY(-1px)}
+.gallery-zoom svg{width:16px;height:16px}
+html[lang="fa"] .gallery-zoom{direction:rtl}
+
+/* نوار کنترل: پیشرفت + دکمه‌ها + شمارنده */
+.gallery-bar{display:grid;gap:8px;padding:9px 12px 10px;border:1px solid var(--border);border-radius:16px;background:var(--surface);box-shadow:var(--shadow)}
+.gallery-progress{height:3px;overflow:hidden;border-radius:999px;background:var(--border)}
+.gallery-progress span{display:block;width:100%;height:100%;border-radius:inherit;background:linear-gradient(90deg,var(--accent),var(--accent-2));transform:scaleX(0);transform-origin:left center}
+.radmehr-gallery.is-autoplay .gallery-progress span{animation:gallery-run var(--g-dur) linear forwards}
+.radmehr-gallery.is-held .gallery-progress span{animation-play-state:paused}
+@keyframes gallery-run{to{transform:scaleX(1)}}
+.gallery-controls{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.gallery-control-group{display:flex;align-items:center;gap:7px}
+html[lang="fa"] .gallery-control-group{direction:rtl}
+.gallery-control{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:38px;padding:0 14px;border:1px solid var(--border);border-radius:999px;background:var(--band);color:var(--text);font-size:.78rem;line-height:1;cursor:pointer;transition:border-color .2s,background .2s,transform .2s}
+.gallery-control:hover{border-color:var(--accent);background:var(--surface);transform:translateY(-1px)}
+.gallery-control--primary{border-color:rgba(169,140,255,.5);background:rgba(169,140,255,.14)}
+.gallery-control svg{width:15px;height:15px;flex:none}
+html[lang="fa"] .gallery-control{direction:rtl}
+.gallery-counter{color:var(--muted);font:700 .78rem/1 Manrope,Arial,sans-serif;letter-spacing:.08em;white-space:nowrap}
+.gallery-control:focus-visible,.gallery-zoom:focus-visible,.gallery-thumb:focus-visible,.gallery-stage:focus-visible{outline:2px solid #c9b4ff;outline-offset:3px}
+
+/* فهرست تصاویر: ارتفاعش همیشه با ستون اصلی برابر است و خودش اسکرول می‌خورد */
+.gallery-rail{position:relative;min-width:0;overflow:hidden;border:1px solid var(--border);border-radius:var(--g-radius);background:var(--surface);box-shadow:var(--shadow)}
+.gallery-rail-inner{position:absolute;inset:0;display:flex;flex-direction:column}
+.gallery-rail-head{display:flex;flex:none;align-items:center;justify-content:space-between;gap:10px;min-height:50px;padding:0 14px;border-bottom:1px solid var(--border)}
+.gallery-rail-head strong{font-size:.86rem;font-weight:750}
+.gallery-rail-head span{padding:4px 9px;border:1px solid var(--border);border-radius:999px;color:var(--muted);font-size:.68rem;white-space:nowrap}
+html[lang="fa"] .gallery-rail-head{direction:rtl}
+.gallery-thumbs{position:relative;display:flex;flex:1 1 auto;flex-direction:column;gap:6px;min-height:0;padding:9px;overflow:hidden auto;overscroll-behavior:contain;direction:ltr;scrollbar-width:thin;scrollbar-color:#a98cff rgba(169,140,255,.1)}
+.gallery-thumbs::-webkit-scrollbar{width:7px;height:7px}
+.gallery-thumbs::-webkit-scrollbar-track{margin:8px;border-radius:999px;background:rgba(169,140,255,.1)}
+.gallery-thumbs::-webkit-scrollbar-thumb{border-radius:999px;background:linear-gradient(180deg,#c5adff,#8063d8)}
+.gallery-thumb{display:grid;flex:none;grid-template-columns:104px minmax(0,1fr);align-items:center;gap:11px;width:100%;padding:7px;border:1px solid transparent;border-radius:13px;background:transparent;color:var(--muted);text-align:start;cursor:pointer;transition:border-color .2s,background .2s,color .2s}
+html[lang="fa"] .gallery-thumb{direction:rtl}
+.gallery-thumb:hover{border-color:var(--border);background:var(--band);color:var(--text)}
+.gallery-thumb[aria-current="true"]{border-color:rgba(169,140,255,.78);background:rgba(169,140,255,.13);color:var(--text)}
+@supports (color:color-mix(in srgb,#fff,#000)){
+  .gallery-thumb[aria-current="true"]{border-color:color-mix(in srgb,var(--accent) 72%,transparent);background:color-mix(in srgb,var(--accent) 11%,var(--surface))}
+}
+.gallery-thumb-image{position:relative;display:block;aspect-ratio:16/10;overflow:hidden;border-radius:8px;background:#191827}
+.gallery-thumb-image img{width:100%;height:100%;object-fit:cover;object-position:50% 0;opacity:.86;transition:opacity .25s}
+.gallery-thumb:hover img,.gallery-thumb[aria-current="true"] img{opacity:1}
+.gallery-thumb-image b{position:absolute;inset:auto 6px 5px auto;padding:3px 6px;border-radius:5px;background:rgba(12,11,22,.78);color:#fff;font:700 .58rem/1 Manrope,Arial,sans-serif}
+html[lang="fa"] .gallery-thumb-image b{inset-inline:6px auto}
+.gallery-thumb-title{display:-webkit-box;overflow:hidden;-webkit-box-orient:vertical;-webkit-line-clamp:2;font-size:.75rem;font-weight:650;line-height:1.55;overflow-wrap:anywhere}
+
+/* پنجرهٔ نمای کامل (بدون هیچ برشی) */
+.gallery-lightbox{width:min(96vw,1360px);max-width:none;max-height:94vh;padding:0;overflow:hidden;border:1px solid rgba(255,255,255,.14);border-radius:20px;background:#0f0e19;color:#f4f1ff;box-shadow:0 30px 90px rgba(0,0,0,.6)}
+.gallery-lightbox::backdrop{background:rgba(8,7,16,.82);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+.gallery-lightbox[open]{display:grid;grid-template-rows:minmax(0,1fr) auto;animation:gallery-in .3s var(--g-ease) both}
+.gallery-lightbox-view{display:grid;place-items:center;min-height:0;padding:clamp(10px,2vw,22px);overflow:auto}
+.gallery-lightbox-view img{width:auto;height:auto;max-width:100%;max-height:calc(94vh - 96px);border-radius:10px;object-fit:contain}
+.gallery-lightbox-bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 16px 14px;direction:ltr}
+.gallery-lightbox-title{min-width:0;margin:0;overflow:hidden;font-size:.88rem;font-weight:700;text-overflow:ellipsis;white-space:nowrap}
+html[lang="fa"] .gallery-lightbox-title{direction:rtl}
+.gallery-lightbox .gallery-control{border-color:rgba(255,255,255,.18);background:rgba(255,255,255,.07);color:#fff}
+.gallery-lightbox .gallery-control:hover{border-color:var(--g-violet);background:rgba(169,140,255,.2)}
+.gallery-lightbox .gallery-counter{color:rgba(255,255,255,.7)}
+
+/* ---------- واکنش‌گرایی ---------- */
+@media(max-width:980px){
+  .detail-grid--four{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:920px){
+  /* دو ستون در عرض کم فشرده می‌شود؛ پس عمودی می‌چینیم و فهرست افقی می‌شود */
+  .gallery-layout{grid-template-columns:minmax(0,1fr);gap:14px}
+  .gallery-stage{aspect-ratio:3/2;max-height:72vh;border-radius:18px}
+  .gallery-rail{position:static;border-radius:18px}
+  .gallery-rail-inner{position:static}
+  .gallery-thumbs{display:grid;grid-auto-flow:column;grid-auto-columns:clamp(138px,28vw,190px);gap:8px;padding:9px;overflow:auto hidden;overscroll-behavior-inline:contain;scroll-snap-type:x proximity;touch-action:pan-x}
+  .gallery-thumbs::-webkit-scrollbar-thumb{background:linear-gradient(90deg,#c5adff,#8063d8)}
+  .gallery-thumb{grid-template-columns:minmax(0,1fr);align-content:start;gap:6px;scroll-snap-align:start}
+}
+@media(max-width:860px){
+  .detail-overview-grid,.detail-columns{grid-template-columns:1fr}
+}
+@media(max-width:760px){
+  .project-detail{padding-top:10px}
+  .project-hero{grid-template-columns:1fr;gap:26px;padding:12px 0 40px}
+  .detail-section{padding:38px 0}
+  .detail-highlights,.detail-grid,.detail-grid--three,.detail-grid--four{grid-template-columns:1fr}
+  .detail-role{grid-template-columns:1fr;gap:8px}
+  .project-outro{padding:26px 20px}
+}
+@media(max-width:560px){
+  .gallery-heading{margin-bottom:18px}
+  .gallery-stage{aspect-ratio:4/3;border-radius:15px}
+  .gallery-caption{display:none}        /* عنوان در فهرست زیر تصویر هست */
+  .gallery-zoom{top:8px;inset-inline-end:8px;min-height:36px;padding:0 10px}
+  .gallery-zoom span{display:none}      /* روی موبایل فقط آیکن */
+  .gallery-bar{padding:10px}
+  .gallery-control{min-height:38px;padding:0 11px;font-size:.72rem}
+  .gallery-thumbs{grid-auto-columns:clamp(128px,40vw,160px)}
+}
+@media(max-width:360px){
+  .gallery-controls{flex-wrap:wrap;justify-content:center}
+  .gallery-control span{display:none}   /* فقط آیکن؛ برچسب‌ها در aria-label هستند */
+}
+@media(prefers-reduced-motion:reduce){
+  .gallery-slide,.gallery-lightbox[open]{animation:none}
+  .gallery-zoom,.gallery-control,.gallery-thumb,.gallery-thumb-image img{transition:none}
+  .gallery-zoom:hover,.gallery-control:hover{transform:none}
+  .radmehr-gallery.is-autoplay .gallery-progress span{animation:none}
+}

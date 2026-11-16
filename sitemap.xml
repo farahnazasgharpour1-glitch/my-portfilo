@@ -1,2 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://example.com/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url></urlset>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://farahnaz-portfolio.vercel.app/</loc>
+    <lastmod>2026-11-15</lastmod>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://farahnaz-portfolio.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://farahnaz-portfolio.vercel.app/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://farahnaz-portfolio.vercel.app/"/>
+  </url>
+  <url>
+    <loc>https://farahnaz-portfolio.vercel.app/en/</loc>
+    <lastmod>2026-11-15</lastmod>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://farahnaz-portfolio.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://farahnaz-portfolio.vercel.app/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://farahnaz-portfolio.vercel.app/"/>
+  </url>
+  <url>
+    <loc>https://farahnaz-portfolio.vercel.app/projects/radmehr/</loc>
+    <lastmod>2026-11-15</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://farahnaz-portfolio.vercel.app/projects/radmehr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://farahnaz-portfolio.vercel.app/en/projects/radmehr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://farahnaz-portfolio.vercel.app/projects/radmehr/"/>
+  </url>
+  <url>
+    <loc>https://farahnaz-portfolio.vercel.app/en/projects/radmehr/</loc>
+    <lastmod>2026-11-15</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://farahnaz-portfolio.vercel.app/projects/radmehr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://farahnaz-portfolio.vercel.app/en/projects/radmehr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://farahnaz-portfolio.vercel.app/projects/radmehr/"/>
+  </url>
+</urlset>
